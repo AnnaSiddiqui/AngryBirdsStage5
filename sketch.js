@@ -75,3 +75,11 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+/* Every key is identified by a KeyCode -- ASCII value (numerical value) */
+
+function keyPressed() {
+    if(keyCode === 32) {
+        slingshot.attach(bird.body);
+    }
+}
